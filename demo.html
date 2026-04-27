@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThemeStudio — Demo</title>
+
+  <!-- reset always loads -->
+  <link rel="stylesheet" id="ts-reset" href="reset.css">
+
+  <!-- active theme — change this one line to preview any theme -->
+  <link rel="stylesheet" id="ts-theme" href="themes/standard/corporate.css">
+
+  <!-- optional utilities -->
+  <link rel="stylesheet" id="ts-utils" href="utilities.css">
+</head>
+<body>
+
+  <!-- =====================
+       HEADER & NAV
+  ====================== -->
+  <header>
+    <nav>
+      <strong>ThemeStudio</strong>
+      <a href="#">Home</a>
+      <a href="#">Docs</a>
+      <a href="#">Themes</a>
+      <a href="#">GitHub</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+
+    <!-- HERO -->
+    <section>
+      <h1>ThemeStudio</h1>
+      <p>
+        A pure CSS theming library for semantic HTML. Drop in one link
+        tag, write clean HTML, and your page is styled. Switch themes
+        by changing a single word. No classes, no configuration,
+        no framework required.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Themes</a></li>
+          <li>Demo</li>
+        </ol>
+      </nav>
+    </section>
+
+
+    <!-- TYPOGRAPHY -->
+    <section>
+      <h2>Typography</h2>
+
+      <h1>Heading One — The quick brown fox</h1>
+      <h2>Heading Two — The quick brown fox</h2>
+      <h3>Heading Three — The quick brown fox</h3>
+      <h4>Heading Four — The quick brown fox</h4>
+      <h5>Heading Five — The quick brown fox</h5>
+      <h6>Heading Six — The quick brown fox</h6>
+
+      <p>
+        This is a standard paragraph. Good typography is invisible —
+        it gets out of the way and lets the content breathe. Line
+        height, font size, and max-width are all tuned for comfortable
+        long-form reading without any configuration needed.
+      </p>
+
+      <p>
+        Text can be <strong>bold for emphasis</strong>, <em>italic for
+        tone</em>, <mark>highlighted for attention</mark>, or
+        <small>small secondary text</small>. You can also show
+        <del>deleted content</del> and <ins>inserted content</ins>.
+      </p>
+
+      <p>
+        Abbreviations like <abbr title="HyperText Markup Language">HTML</abbr>
+        and <abbr title="Cascading Style Sheets">CSS</abbr> get dotted
+        underlines. Keyboard shortcuts like <kbd>Ctrl</kbd> +
+        <kbd>C</kbd> are styled distinctly. Math works too —
+        E = mc<sup>2</sup> and H<sub>2</sub>O.
+      </p>
+
+      <p>
+        Links look like <a href="#">this inline link</a> — clear and
+        functional without being distracting.
+      </p>
+    </section>
+
+
+    <!-- BLOCKQUOTE -->
+    <section>
+      <h2>Blockquote</h2>
+      <blockquote>
+        <p>
+          What I cannot create, I do not understand. The best way to
+          learn something deeply is to build it from scratch, even if
+          a better version already exists.
+        </p>
+      </blockquote>
+    </section>
+
+
+    <!-- LISTS -->
+    <section>
+      <h2>Lists</h2>
+      <div class="ts-grid-auto">
+
+        <div>
+          <h4>Unordered</h4>
+          <ul>
+            <li>Reset normalizes browser defaults</li>
+            <li>Themes define visual personality</li>
+            <li>Utilities provide escape hatches
+              <ul>
+                <li>Spacing utilities</li>
+                <li>Typography utilities</li>
+              </ul>
+            </li>
+            <li>Semantic HTML, zero classes</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ordered</h4>
+          <ol>
+            <li>Include reset.css</li>
+            <li>Pick a theme file</li>
+            <li>Write semantic HTML</li>
+            <li>Add utilities if needed</li>
+          </ol>
+        </div>
+
+        <div>
+          <h4>Description</h4>
+          <dl>
+            <dt>Minimal Tier</dt>
+            <dd>Clean canvas, full user control</dd>
+            <dt>Balanced Tier</dt>
+            <dd>Structured with utility tweaks</dd>
+            <dt>Complete Tier</dt>
+            <dd>Fully opinionated, one file</dd>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CODE -->
+    <section>
+      <h2>Code</h2>
+      <p>
+        Use <code>inline code</code> for snippets inside prose.
+        Use <kbd>Ctrl</kbd> + <kbd>V</kbd> for keyboard shortcuts.
+      </p>
+      <pre><code>&lt;!-- ThemeStudio setup --&gt;
+&lt;link rel="stylesheet" href="themestudio/reset.css"&gt;
+&lt;link rel="stylesheet" href="themestudio/themes/minimal/basic.css"&gt;
+
+&lt;!-- Optional utilities --&gt;
+&lt;link rel="stylesheet" href="themestudio/utilities.css"&gt;
+
+&lt;!-- Write semantic HTML, everything is styled --&gt;
+&lt;button&gt;Already styled&lt;/button&gt;
+&lt;nav&gt;&lt;a href="/"&gt;No classes needed&lt;/a&gt;&lt;/nav&gt;</code></pre>
+    </section>
+
+
+    <!-- BUTTONS -->
+    <section>
+      <h2>Buttons</h2>
+
+      <h4>Variants</h4>
+      <div class="ts-demo-row">
+        <button>Primary</button>
+        <button class="outline">Outline</button>
+        <button class="ghost">Ghost</button>
+        <button class="danger">Danger</button>
+      </div>
+
+      <h4>States</h4>
+      <div class="ts-demo-row">
+        <button>Normal</button>
+        <button disabled>Disabled</button>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </section>
+
+
+    <!-- FORMS -->
+    <section>
+      <h2>Forms</h2>
+      <div class="ts-grid-auto">
+
+        <div>
+          <h4>Text Inputs</h4>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Manish Bharadwaj">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="manish@example.com">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••">
+          <label for="search">Search</label>
+          <input type="search" id="search" placeholder="Search anything...">
+          <label for="dis">Disabled</label>
+          <input type="text" id="dis" value="Cannot edit" disabled>
+        </div>
+
+        <div>
+          <h4>Other Inputs</h4>
+          <label for="msg">Message</label>
+          <textarea id="msg" placeholder="Write something..."></textarea>
+          <label for="role">Role</label>
+          <select id="role">
+            <option value="">Choose a role...</option>
+            <option>Developer</option>
+            <option>Designer</option>
+            <option>Product Manager</option>
+          </select>
+          <label for="vol">Range</label>
+          <input type="range" id="vol" min="0" max="100" value="60">
+          <label for="file">File Upload</label>
+          <input type="file" id="file">
+        </div>
+
+        <div>
+          <h4>Checkbox &amp; Radio</h4>
+          <label>
+            <input type="checkbox" checked> Semantic HTML
+          </label>
+          <label>
+            <input type="checkbox"> Zero dependencies
+          </label>
+          <label>
+            <input type="checkbox"> Framework agnostic
+          </label>
+          <label>
+            <input type="radio" name="tier" checked> Minimal
+          </label>
+          <label>
+            <input type="radio" name="tier"> Balanced
+          </label>
+          <label>
+            <input type="radio" name="tier"> Complete
+          </label>
+
+          <fieldset>
+            <legend>Preferences</legend>
+            <label>
+              <input type="checkbox" checked> Notifications
+            </label>
+            <label>
+              <input type="checkbox"> Dark mode
+            </label>
+          </fieldset>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TABLE -->
+    <section>
+      <h2>Table</h2>
+      <table>
+        <caption>ThemeStudio File Structure</caption>
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Tier</th>
+            <th>Purpose</th>
+            <th>Required</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>reset.css</code></td>
+            <td>Core</td>
+            <td>Normalize browser defaults</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td><code>basic.css</code></td>
+            <td>Minimal</td>
+            <td>Stark black and white theme</td>
+            <td>Pick one</td>
+          </tr>
+          <tr>
+            <td><code>modern.css</code></td>
+            <td>Balanced</td>
+            <td>Structured with more styling</td>
+            <td>Pick one</td>
+          </tr>
+          <tr>
+            <td><code>midnight.css</code></td>
+            <td>Complete</td>
+            <td>Fully opinionated dark theme</td>
+            <td>Pick one</td>
+          </tr>
+          <tr>
+            <td><code>utilities.css</code></td>
+            <td>Optional</td>
+            <td>Escape hatch utility classes</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>3 tiers</td>
+            <td>9+ themes planned</td>
+            <td>2 files min</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+
+    <!-- DETAILS -->
+    <section>
+      <h2>Details &amp; Summary</h2>
+
+      <details>
+        <summary>How do I switch themes?</summary>
+        <p>
+          Change the theme filename in your link tag. Replace
+          <code>basic.css</code> with any other theme and the
+          entire page restyles automatically.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does this work with React or Next.js?</summary>
+        <p>
+          Yes. ThemeStudio is pure CSS with no JavaScript dependency.
+          Import it globally and write semantic JSX — it just works.
+        </p>
+      </details>
+
+      <details open>
+        <summary>What does minimal tier mean?</summary>
+        <p>
+          Minimal themes provide a clean canvas with sensible defaults.
+          The library stays out of your way while still making your
+          page look intentional and readable.
+        </p>
+      </details>
+    </section>
+
+
+    <!-- PROGRESS & METER -->
+    <section>
+      <h2>Progress &amp; Meter</h2>
+
+      <label>Project setup</label>
+      <progress value="100" max="100"></progress>
+
+      <label>Theme building</label>
+      <progress value="40" max="100"></progress>
+
+      <label>Documentation</label>
+      <progress value="15" max="100"></progress>
+
+      <label>Battery — Optimum</label>
+      <meter value="0.8" min="0" max="1" low="0.2" high="0.5" optimum="1"></meter>
+
+      <label>Disk — Suboptimum</label>
+      <meter value="0.6" min="0" max="1" low="0.3" high="0.8" optimum="0.2"></meter>
+
+      <label>CPU — Critical</label>
+      <meter value="0.9" min="0" max="1" low="0.3" high="0.7" optimum="0.1"></meter>
+    </section>
+
+
+    <!-- MEDIA -->
+    <section>
+      <h2>Media</h2>
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+          alt="Code on a screen"
+        >
+        <figcaption>
+          A well-crafted CSS library makes every page feel intentional
+          without a single extra class.
+        </figcaption>
+      </figure>
+    </section>
+
+
+    <!-- MISC -->
+    <section>
+      <h2>Misc</h2>
+
+      <h4>Horizontal Rule</h4>
+      <p>Content above the rule.</p>
+      <hr>
+      <p>Content below the rule.</p>
+
+      <h4>Aside</h4>
+      <aside>
+        <strong>Note:</strong> ThemeStudio themes are completely self
+        contained. Each file includes color tokens, typography, and
+        element styles. One link tag and your page is ready.
+      </aside>
+
+      <h4>Address</h4>
+      <address>
+        ThemeStudio Project<br>
+        Built by Manish Bharadwaj<br>
+        Mathura, Uttar Pradesh, India<br>
+        <a href="mailto:manish@example.com">manish@example.com</a>
+      </address>
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    <p>
+      ThemeStudio — Pure CSS theming for semantic HTML.
+      Built by Manish Bharadwaj.
+      <a href="#">GitHub</a> · <a href="#">Docs</a>
+    </p>
+  </footer>
+
+
+</body>
+</html>
